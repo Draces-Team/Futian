@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Kufi Arabic";
+    color: #233326;
+    text-decoration: none;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5%;
+    background-color: #fff;
+    vertical-align: middle;
+    padding-block: 20px;
+}
+header ul{
+    
+    list-style: none;
+    display: flex;   
+}
+header ul li{
+    margin-inline: 15px;
+}
+
+header ul li a{
+    text-decoration: none;
+}
+header .buttons a{
+    
+    text-decoration: none;
+    padding: 10px 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+header .buttons a:nth-child(1){
+    background-color: #D92004;
+    color: aliceblue;
+}
+header .buttons button {
+    border: none;
+    background-color: #fff;
+    overflow: hidden;
+}
+header .buttons button img{
+    width: 30px;
+}
+.hero{
+    display: flex;
+    padding-inline: 10%;
+    padding-block: 50px;
+    background-image: linear-gradient(121deg,rgba(29,116,255,.1),rgba(255,179,238,.04));
+}
+
+.hero .col-1{
+    flex-basis: 50%;
+}
+.hero .col-1 img{
+    width: 500px;
+}
+
+.hero .col-2{
+    flex-basis: 50%;
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+.hero .col-2 *{
+    direction: rtl;
+}
+.hero .col-2 a{
+    margin-block: 20px;
+    background-color: #d90429;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+.hero .col-2 h1{
+    font-size: 3rem;
+}
+.hero .col-2 h1:nth-child(2){
+    color: #d90429;
+}
+img{
+    width: 100px;
+}
+.brands{
+    text-align: center;
+}
+.brands .logo-brands{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-brands img{
+    margin-inline: 20px;
+}
+.payment_methods{
+    text-align: center;
+}
+.payment_methods .logo-brands{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partners{
+    text-align: center;
+}
+.partners .logo-brands{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.call-to-action{
+    text-align: center;
+    margin-block: 30px;
+}
+.call-to-action h2{
+    margin-bottom: 35px;
+}
+.call-to-action a{
+    background-color: #d90429;
+    color: aliceblue;
+    
+    border-radius: 8px;
+    padding: 6px 30px;
+}
+.h-line{    
+    margin-inline: 10%;
+    margin-block: 30px;
+    background-color: #233326;
+    height: 2px;
+}
+.sections{
+    direction: rtl;
+    display: flex;
+    padding-inline: 5%;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.sections .ft-section{
+    flex-basis: 20%;
+    margin-bottom: 30px;
+}
+.sections .ft-section:nth-child(1){
+    flex-basis: 60%;
+    margin-left: 100px;
+}
+footer .sections .ft-section p{
+    margin-bottom: 10px;
+}
+footer .sections .social-media{
+    text-align: left;
+}
+footer .sections .social-media a *{
+    width: 30px;
+    height: 30px;
+    
+}
+footer .copywrite{
+    text-align: center;
+    background-color: #233326;
+    padding: 10px 20px;
+}
+footer .copywrite * {
+    color: aliceblue;
+}
+.banned-materials{
+    padding-inline: 10%;
+    padding-block: 40px;
+}
+.banned-materials h1{
+    text-align: center;
+}
+.banned-materials ul{
+    direction: rtl;
+}
+.calculator{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.calculator h1{
+    grid-column: 1 / 3;
+}
+.calculator label{
+    display: flex;
+    flex-direction: column;
+    grid-column: 50%;
+}
+.calculator label[type=button]{
+    text-align: center;
+    width: 20%;
+    grid-column: 1 / 3;
+}
+.faq{
+    text-align: center;
+}
+.sign{
+    margin-inline: 35%;
+    margin-block: 3%;
+    padding-block: 40px;
+    text-align: center;
+    border: 3px solid #233326 ;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign form{
+    padding-inline: 20px;
+}
+.sign form button[type='submit']{
+ background-color: #023047;
+ color: aliceblue;
+ border: none;
+ padding: 4px 20px;
+ margin-block: 20px 5px;
+ border-radius: 6px;
+}
+.sign img{
+    margin-bottom: 20px;
+}
+.sign label{
+    text-align: right;
+    margin-inline: 20px;
+}
+.sign label input{
+    width: 100%;
+}
+.sign > a{
+    margin-block: 10px;
+    background-color: #D92004;
+    color: aliceblue;
+    padding: 4px 5px;
+}
+.home{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-inline: 10%;
+    padding-block: 30px;
+}
+.home .closet{
+    background-color: #301934;
+    flex-basis: 45%;
+    padding: 3%;
+    direction: rtl;
+}
+.home *{
+    color: aliceblue;
+}
+.home .address{
+    background-color: #660000;
+    flex-basis: 45%;
+    padding: 3%;
+}
+.home .address .note{
+    direction: rtl;
+}
+
+.goods{
+    display: flex;
+    text-align: right;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5%;
+    padding-block: 20px;
+}
+nav .buttons{
+    display: flex;
+    flex-direction: row-reverse;
+}
+nav .buttons *{
+    height: 35px;
+    width: 40px;
+    background-color: #fff;
+    border: none;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav uL li{
+    margin-inline: 30px;
+}
+.controle-bar{
+    padding-inline: 8%;
+}
+.controle-bar ul{
+    display: flex;
+    justify-content: end;
+    padding-block: 3px;
+    list-style: none;
+}
+.controle-bar ul li{
+    margin-inline: 20px;
+    
+}
