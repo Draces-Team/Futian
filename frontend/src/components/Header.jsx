@@ -10,8 +10,8 @@ function Header(){
     </div>  
     <ul>
         <li><Link to="/features">المزايا</Link></li>
-        <li><Link to="/howItWork">كيف نعمل؟</Link></li>
-        <li><Link to="/stores">التسوق الشخصي</Link></li>
+        <li><Link to="/how-it-work">كيف نعمل؟</Link></li>
+        <li><Link to="/buy-for-me">التسوق الشخصي</Link></li>
         <li><Link to="/calculator">تكلفة الشحنة</Link></li>
     </ul>
     <img src="../../public/img/logo/Logo.svg" alt="Futian"/>

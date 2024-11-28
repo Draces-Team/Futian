@@ -4,11 +4,11 @@ import '../styles/main.css'
 
 
 function AddressStikcers(){
-    return  <div className="address">
+    return  <div className="local-address">
     <div className="note">
       <h3>عنوان المنزل</h3>
     </div>
-    <div className="your-address">
+    <div className="details">
       <h5>Name:</h5>
       <span>first name + last name</span>          
       <h5>Address Line1:</h5>

@@ -1,20 +1,21 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
-from .models import Note , Addresses
+from django.contrib.auth import get_user_model
+from djoser.serializers import UserCreateSerializer
+
+#from .models import Note , Addresses
 
 
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
+User = get_user_model()
+
+
+class CreateUserSerializer(UserCreateSerializer):
+    class Meta(UserCreateSerializer.Meta):
         model = User
-        fields = ["id", "username", "password"]
-        extra_kwargs = {"password": {"write_only": True}}
-
-    def create(self, validated_data):
-        print(validated_data)
-        user = User.objects.create_user(**validated_data)
-        return user
+        fields = ['id', 'email', 'first_name', 'last_name', 'password']
 
 
+""" 
 class NoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Note
@@ -25,3 +26,4 @@ class NoteSerializer(serializers.ModelSerializer):
 class AddressesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Addresses
+        fields = ["id","address_line1","address_line2","city","state","code_postal","phone_number"] """

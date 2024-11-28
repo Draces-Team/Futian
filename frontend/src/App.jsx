@@ -21,16 +21,12 @@ import Staff from "./pages/Staff";
 import StaffDashboard from "./pages/StaffDashboard";
 import User from "./pages/User";
 import Transactions from "./pages/Transactions";
-
+import BuyForMe from "./pages/BuyForMe";
 function App(){
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Dashboard" element={
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
-          }/>
+        <Route path="/Dashboard" element={ <Dashboard />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/register" element={<Register />}/>
         <Route path="/" element={<Home />}/>
@@ -46,10 +42,12 @@ function App(){
         <Route path="/shipped" element={<Shipped />}/>
         <Route path="/myaddressbook" element={<BookAddress />}/>
         <Route path="/myaddress" element={<MyAddress />}/>
-        <Route path="/staff" element={<Staff />}/>
-        <Route path="/staff-dashboard" element={<StaffDashboard />}/>
+        <Route path="/admin" element={<Staff />}/>
+        <Route path="/admin-dashboard" element={<StaffDashboard />}/>
         <Route path="/user" element={<User />}/>
         <Route path="/transactions" element={<Transactions />}/>
+        <Route path="/buy-for-me" element={<BuyForMe />}/>
+
 
 
       </Routes>

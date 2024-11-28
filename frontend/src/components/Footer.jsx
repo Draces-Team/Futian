@@ -12,9 +12,9 @@ function Footer(){
         <p>تسوق من المنصات والمتاجر الصينية واشحن عبر الانترنت إلى جميع أنحاء العالم.</p>
         <p> فوتيان هي خدمة شحن الطرود والتسوق أونلاين، مع مميزات 6 أشهر من التخزين المجاني، بدون تكاليف مخفية والاشتراكات المكلفة، وأفضل أسعار الشحن الأرخص في السوق.</p>
         <div className="social-media">
-            <a href=""><img src="../../public/img/social-media/facebook.svg" alt="Facebook"/></a>
-            <a href=""><img src="../../public/img/social-media/instagram.svg" alt="Instagram"/></a>
-            <a href=""><img src="../../public/img/social-media/twitter.svg" alt="X"/></a>
+            <Link to=""><img src="../../public/img/social-media/facebook.svg" alt="Facebook"/></Link>
+            <Link to=""><img src="../../public/img/social-media/instagram.svg" alt="Instagram"/></Link>
+            <Link to=""><img src="../../public/img/social-media/twitter.svg" alt="X"/></Link>
         </div>
     </div>
     <div className="ft-section">

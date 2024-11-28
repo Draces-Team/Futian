@@ -8,6 +8,9 @@
     text-decoration: none;
     
 }
+button:hover , input[type=button]:hover{
+    cursor: pointer;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -92,6 +95,7 @@ img{
 }
 .brands{
     text-align: center;
+    background-image: linear-gradient(121deg,rgba(29,116,255,.1),rgba(255,179,238,.04));
 }
 .brands .logo-brands{
     display: flex;
@@ -100,6 +104,38 @@ img{
 }
 .logo-brands img{
     margin-inline: 20px;
+}
+.features-1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-inline: 50px;
+    background-image: linear-gradient(121deg,rgba(29,116,255,.1),rgba(255,179,238,.04));
+}
+.features-1 .feature{
+    flex-basis: 33%;
+    direction: rtl;
+    margin-inline: 20px;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+.features-1 .feature:nth-child(1){
+    background-color: #90e0ef;
+    
+}
+
+.features-1 .feature:nth-child(2){
+    background-color: #caf0f8;
+    
+}
+
+.features-1 .feature:nth-child(3){
+    background-color: #e0fbfc;
+    
+}
+
+.features-1 .feature img{
+    width: 50px;
 }
 .payment_methods{
     text-align: center;
@@ -185,6 +221,7 @@ footer .copywrite * {
     text-align: center;
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-inline: 5%;
 }
 .calculator h1{
     grid-column: 1 / 3;
@@ -193,11 +230,29 @@ footer .copywrite * {
     display: flex;
     flex-direction: column;
     grid-column: 50%;
+    align-items: end;
+    margin-inline: 10px;
+    margin-block: 6px;
 }
-.calculator label[type=button]{
-    text-align: center;
-    width: 20%;
+
+.calculator label select{
+    width: 100%;
+    direction: rtl;
+    
+}
+.calculator label input{
+    width: 100%;
+}
+.calculator input[type=button]{
     grid-column: 1 / 3;
+    text-align: center;
+    margin-inline: 45% 45%;
+    margin-block: 10px;
+    background-color: #023047;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
 }
 .faq{
     text-align: center;
@@ -307,4 +362,104 @@ nav uL li{
 .controle-bar ul li{
     margin-inline: 20px;
     
+}
+.book-address{
+    display: grid;
+    direction: rtl;
+    grid-template-columns: auto auto auto;
+    padding-inline: 3%;
+
+}
+.local-address{
+    margin-block: 20px 20px;
+    margin-inline: 10px;
+    flex-basis: 33%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    border: 2px solid #023047;
+    direction: rtl;
+    padding: 10px 20px;
+}
+.local-address .details{
+    direction: ltr;
+}
+
+.local-address button{
+    background-color: #023047;
+    color: aliceblue;
+    padding: 10px 15px;
+    border-radius: 9px;
+    border: none;
+    margin-inline: 5px;
+}
+
+.local-address button:nth-child(2){
+    background-color: #d90429;
+    color: aliceblue;
+    padding: 10px 15px;
+    border-radius: 9px;
+    border: none;
+    margin-inline: 5px;
+}
+.how-it-work{
+    text-align: center;
+}
+.how-it-work .step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 8%;
+}
+.how-it-work .step .col-1{
+    margin-inline: 10px;
+    flex-basis: 50%;
+}
+.how-it-work .step .col-2{
+    margin-inline: 10px;
+    flex-basis: 50%;
+    text-align: right;
+}
+.reversed-row{
+    flex-direction: row-reverse;
+}
+.how-it-work .step:nth-child(1){
+    color: #028090;
+}
+.not-found{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.not-found .error{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.not-found .error h1{
+    font-size: 80px;
+    color: #ff5280;
+}
+.not-found .error img{
+    width: 300px;
+    margin-left: 50px;
+}
+.items{
+    padding-inline:8% ;
+}
+.items .item{
+    display: flex;
+    justify-content: space-around;
+    background-color: #023047;
+    direction: rtl;
+}
+.items .item * {
+    color: aliceblue;
+    flex-basis: 33%;
+    padding-right: 20px;
+}
+.buy-for-me{
+    text-align: center;
 }

@@ -6,6 +6,12 @@ function BookAddress(){
     <Navbar></Navbar>
     <div className="book-address">
         <AddressStickers></AddressStickers>
+        <AddressStickers></AddressStickers>
+        <AddressStickers></AddressStickers>
+        <AddressStickers></AddressStickers>
+        <AddressStickers></AddressStickers>
+        <AddressStickers></AddressStickers>
+        <AddressStickers></AddressStickers>
     </div>
 </div>
 }
